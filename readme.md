@@ -16,7 +16,7 @@ Python 3.8 can be used together with other Python versions. Example of installat
 
 ```
 brew install python@3.8
-git clone https://github.com/totaleo/telegram-db-parser.git
+git clone https://github.com/leoblum/telegram-db-parser.git
 cd telegram-db-parser
 /usr/local/opt/python@3.8/bin/python3 -m pip -r requirements.txt
 /usr/local/opt/python@3.8/bin/python3 main.py
