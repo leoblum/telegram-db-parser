@@ -1,5 +1,5 @@
 from .TableSpec import TableSpec
-from ..postbox import decoder
+from ..decoder import decoder
 
 
 class PeerTable(TableSpec):

@@ -1,1 +1,3 @@
 pysqlcipher3==1.0.3
+murmurhash3==2.3.5
+natsorted==6.0.0

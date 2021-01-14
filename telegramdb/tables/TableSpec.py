@@ -28,12 +28,14 @@ class TableSpec:
         self.val = self._result
 
     def __str__(self):
+        return json.dumps(self.to_dict(), ensure_ascii=False)
+
+    def to_dict(self):
         # todo: same keys will be deleted
         # print(dict([('a', 1), ('a', 2)]))
         key = dict(self.key) if isinstance(self.key, list) else self.key
-        val = dict(self.val)
-        res = dict(key=key, val=val)
-        return json.dumps(res, ensure_ascii=False)
+        val = dict(self.val) if self.val is not None else None
+        return dict(key=key, val=val)
 
     def _reset(self, buffer=None):
         self._buffer = [] if buffer is None else buffer

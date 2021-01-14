@@ -1,4 +1,5 @@
 from .TableSpec import TableSpec
+from ..decoder import decoder
 
 
 class MessageHistoryTable(TableSpec):
@@ -58,16 +59,16 @@ class MessageHistoryTable(TableSpec):
         read(4, 'attributeCount', big_endian=True)
         for i in range(last()):
             read(4, 'attributeLength', big_endian=True)
-            # todo:
-            # read(last(), 'attributeBytes', bytes)
+            data = decoder(self._buffer[:last()], '_')
             skip(last())
+            self._result.append(('attributeValue', data))
 
         read(4, 'embeddedMediaCount', big_endian=True)
         for i in range(last()):
             read(4, 'mediaLength', big_endian=True)
-            # todo:
-            # read(last(), 'mediaBytes', bytes)
+            data = decoder(self._buffer[:last()], '_')
             skip(last())
+            self._result.append(('mediaValue', data))
 
         read(4, 'referencedMediaIdsCount', big_endian=True)
         for i in range(last()):

@@ -8,14 +8,20 @@ def get_macos_accounts():
      return [x for x in os.listdir(MACOS_BASE) if x.startswith('account-')]
 
 
-def get_macos_db_key():
-    with open(os.path.join(MACOS_BASE, '.tempkey'), 'rb') as fp:
+def get_macos_db_key(filepath=None):
+    if filepath is None:
+        filepath = os.path.join(MACOS_BASE, '.tempkey')
+    with open(filepath, 'rb') as fp:
         return fp.read().hex()
 
 
 def get_macos_db_conn(account, key=None):
     key = get_macos_db_key() if key is None else key
     db_path = os.path.join(MACOS_BASE, account, 'postbox/db/db_sqlite')
+    return get_db_conn(db_path, key)
+
+
+def get_db_conn(db_path, key):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute('PRAGMA cipher_plaintext_header_size=32;')

@@ -1,60 +1,60 @@
-MetadataTable.tableSpec(0)
-KeychainTable.tableSpec(1)
-ReverseAssociatedPeerTable.tableSpec(40)
-PeerTable.tableSpec(2)
-GlobalMessageIdsTable.tableSpec(3)
-MessageGloballyUniqueIdTable.tableSpec(32)
-MessageHistoryMetadataTable.tableSpec(10)
-MessageHistoryHoleIndexTable.tableSpec(56)
-MessageHistoryUnsentTable.tableSpec(11)
-MessageHistoryFailedTable.tableSpec(49)
-InvalidatedMessageHistoryTagsSummaryTable.tableSpec(47)
-MessageHistoryTagsSummaryTable.tableSpec(44)
-PendingMessageActionsMetadataTable.tableSpec(45)
-PendingMessageActionsTable.tableSpec(46)
-MessageHistoryTagsTable.tableSpec(12)
-MessageHistoryThreadsTable.tableSpec(62)
-MessageHistoryThreadHoleIndexTable.tableSpec(63)
-GlobalMessageHistoryTagsTable.tableSpec(39)
-GlobalMessageHistoryTagsTable.tableSpec(52)
-MessageHistoryIndexTable.tableSpec(4)
-MessageMediaTable.tableSpec(6)
-MessageHistoryReadStateTable.tableSpec(14)
-MessageHistorySynchronizeReadStateTable.tableSpec(15)
-InvalidatedGroupMessageStatsTable.tableSpec(59)
-TimestampBasedMessageAttributesTable.tableSpec(33)
-TimestampBasedMessageAttributesTable.tableSpec(34)
-MessageHistoryTextIndexTable.tableSpec(41)
-AdditionalChatListItemsTable.tableSpec(55)
-MessageHistoryTable.tableSpec(7)
-PeerChatStateTable.tableSpec(13)
-ReverseIndexReferenceTable<PeerIdReverseIndexReference>.tableSpec(26)
-PeerNameIndexTable.tableSpec(27)
-ContactTable.tableSpec(16)
-RatingTable<PeerId>.tableSpec(17)
-CachedPeerDataTable.tableSpec(18)
-PendingPeerNotificationSettingsIndexTable.tableSpec(48)
-PeerNotificationSettingsBehaviorIndexTable.tableSpec(60)
-PeerNotificationSettingsBehaviorTable.tableSpec(61)
-PeerNotificationSettingsTable.tableSpec(19)
-PeerPresenceTable.tableSpec(20)
-ItemCollectionInfoTable.tableSpec(21)
-ReverseIndexReferenceTable<ItemCollectionItemReverseIndexReference>.tableSpec(36)
-ItemCollectionItemTable.tableSpec(22)
-PeerChatInterfaceStateTable.tableSpec(23)
-PeerChatThreadInterfaceStateTable.tableSpec(64)
-ItemCacheMetaTable.tableSpec(24)
-ItemCacheTable.tableSpec(25)
-ChatListIndexTable.tableSpec(8)
-ChatListTable.tableSpec(9)
-PeerChatTopTaggedMessageIdsTable.tableSpec(28)
-PeerOperationLogMetadataTable.tableSpec(29)
-PeerMergedOperationLogIndexTable.tableSpec(30)
-PeerOperationLogTable.tableSpec(31)
-PreferencesTable.tableSpec(35)
-OrderedItemListIndexTable.tableSpec(37)
-OrderedItemListTable.tableSpec(38)
-UnorderedItemListTable.tableSpec(42)
-NoticeTable.tableSpec(43)
-DeviceContactImportInfoTable.tableSpec(54)
-GroupMessageStatsTable.tableSpec(58)
+   0 MetadataTable
+   1 KeychainTable
+   2 PeerTable
+   3 GlobalMessageIdsTable
+   4 MessageHistoryIndexTable
+   6 MessageMediaTable
+   7 MessageHistoryTable
+   8 ChatListIndexTable
+   9 ChatListTable
+  10 MessageHistoryMetadataTable
+  11 MessageHistoryUnsentTable
+  12 MessageHistoryTagsTable
+  13 PeerChatStateTable
+  14 MessageHistoryReadStateTable
+  15 MessageHistorySynchronizeReadStateTable
+  16 ContactTable
+  17 RatingTable<PeerId>
+  18 CachedPeerDataTable
+  19 PeerNotificationSettingsTable
+  20 PeerPresenceTable
+  21 ItemCollectionInfoTable
+  22 ItemCollectionItemTable
+  23 PeerChatInterfaceStateTable
+  24 ItemCacheMetaTable
+  25 ItemCacheTable
+  26 ReverseIndexReferenceTable<PeerIdReverseIndexReference>
+  27 PeerNameIndexTable
+  28 PeerChatTopTaggedMessageIdsTable
+  29 PeerOperationLogMetadataTable
+  30 PeerMergedOperationLogIndexTable
+  31 PeerOperationLogTable
+  32 MessageGloballyUniqueIdTable
+  33 TimestampBasedMessageAttributesTable
+  34 TimestampBasedMessageAttributesTable
+  35 PreferencesTable
+  36 ReverseIndexReferenceTable<ItemCollectionItemReverseIndexReference>
+  37 OrderedItemListIndexTable
+  38 OrderedItemListTable
+  39 GlobalMessageHistoryTagsTable
+  40 ReverseAssociatedPeerTable
+  41 MessageHistoryTextIndexTable
+  42 UnorderedItemListTable
+  43 NoticeTable
+  44 MessageHistoryTagsSummaryTable
+  45 PendingMessageActionsMetadataTable
+  46 PendingMessageActionsTable
+  47 InvalidatedMessageHistoryTagsSummaryTable
+  48 PendingPeerNotificationSettingsIndexTable
+  49 MessageHistoryFailedTable
+  52 GlobalMessageHistoryTagsTable
+  54 DeviceContactImportInfoTable
+  55 AdditionalChatListItemsTable
+  56 MessageHistoryHoleIndexTable
+  58 GroupMessageStatsTable
+  59 InvalidatedGroupMessageStatsTable
+  60 PeerNotificationSettingsBehaviorIndexTable
+  61 PeerNotificationSettingsBehaviorTable
+  62 MessageHistoryThreadsTable
+  63 MessageHistoryThreadHoleIndexTable
+  64 PeerChatThreadInterfaceStateTable

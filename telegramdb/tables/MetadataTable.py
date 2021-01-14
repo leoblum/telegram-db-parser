@@ -1,4 +1,5 @@
 from .TableSpec import TableSpec
+from ..decoder import decoder
 
 
 class MetadataTable(TableSpec):
@@ -10,8 +11,8 @@ class MetadataTable(TableSpec):
         if self.key == 1:
             read(4, 'userVersion')
         if self.key == 2:
-            # Coding.swift:684
-            raise TypeError
+            self._result = decoder(self._buffer, '_')
+            self._buffer = bytes()
         if self.key == 3:
             read(8, 'transactionStateVersion')
         if self.key == 4:
